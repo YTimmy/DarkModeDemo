@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="THe-s5-Uyb">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="LWY-Wb-inG"/>
+                                    <constraint firstAttribute="height" constant="100" id="qlY-4c-TKr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tK0-rn-9Z6">
+                                <rect key="frame" x="184.5" y="508" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="史蒂夫·乔布斯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQX-Mz-iha">
+                                <rect key="frame" x="152.5" y="539" width="109" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8C-YI-Fl2">
+                                <rect key="frame" x="136.5" y="569.5" width="141" height="30"/>
+                                <state key="normal" title="Apple Computer Inc."/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="THe-s5-Uyb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5OY-rn-UtJ"/>
+                            <constraint firstItem="PQX-Mz-iha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="98H-s5-adp"/>
+                            <constraint firstItem="tK0-rn-9Z6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DQv-XA-1fe"/>
+                            <constraint firstItem="i8C-YI-Fl2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P4q-DQ-Gsc"/>
+                            <constraint firstItem="THe-s5-Uyb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dke-mg-yM8"/>
+                            <constraint firstItem="i8C-YI-Fl2" firstAttribute="top" secondItem="PQX-Mz-iha" secondAttribute="bottom" constant="10" id="fLV-Fe-P0q"/>
+                            <constraint firstItem="PQX-Mz-iha" firstAttribute="top" secondItem="tK0-rn-9Z6" secondAttribute="bottom" constant="10" id="mob-ey-jhd"/>
+                            <constraint firstItem="tK0-rn-9Z6" firstAttribute="top" secondItem="THe-s5-Uyb" secondAttribute="bottom" constant="10" id="nND-Jx-xU4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="companyBtn" destination="i8C-YI-Fl2" id="clL-Rc-fsY"/>
+                        <outlet property="descLb" destination="PQX-Mz-iha" id="Dvh-8m-L9m"/>
+                        <outlet property="iconIv" destination="THe-s5-Uyb" id="OFV-mW-5hT"/>
+                        <outlet property="tipLb" destination="tK0-rn-9Z6" id="jvq-cw-rbn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple" width="512" height="512"/>
+    </resources>
+</document>
