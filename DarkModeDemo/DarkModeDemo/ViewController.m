@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 
@@ -89,6 +90,11 @@
     self.companyBtn.layer.borderColor = dyColor.CGColor;
     
 // ⚠️!!! 设置layer颜色都是在traitCollectionDidChange中，意味着如果没有发生模式切换，layer将会没有颜色，需要设置一个基本颜色
+}
+- (IBAction)companyAction {
+    DetailViewController *detailVc = [[DetailViewController alloc] init];
+    detailVc.modalPresentationStyle = UIModalPresentationPageSheet;
+    [self presentViewController:detailVc animated:YES completion:nil];
 }
 
 @end

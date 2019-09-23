@@ -14,6 +14,8 @@
 		22D5577423388D8200B215DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D5577323388D8200B215DC /* Assets.xcassets */; };
 		22D5577723388D8200B215DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D5577523388D8200B215DC /* LaunchScreen.storyboard */; };
 		22D5577A23388D8200B215DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D5577923388D8200B215DC /* main.m */; };
+		22D557832338B8BF00B215DC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D557812338B8BF00B215DC /* DetailViewController.m */; };
+		22D557842338B8BF00B215DC /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D557822338B8BF00B215DC /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		22D5577623388D8200B215DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22D5577823388D8200B215DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22D5577923388D8200B215DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22D557802338B8BF00B215DC /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		22D557812338B8BF00B215DC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		22D557822338B8BF00B215DC /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,9 @@
 				22D5576B23388D7F00B215DC /* SceneDelegate.m */,
 				22D5576D23388D7F00B215DC /* ViewController.h */,
 				22D5576E23388D7F00B215DC /* ViewController.m */,
+				22D557802338B8BF00B215DC /* DetailViewController.h */,
+				22D557812338B8BF00B215DC /* DetailViewController.m */,
+				22D557822338B8BF00B215DC /* DetailViewController.xib */,
 				22D5577023388D7F00B215DC /* Main.storyboard */,
 				22D5577323388D8200B215DC /* Assets.xcassets */,
 				22D5577523388D8200B215DC /* LaunchScreen.storyboard */,
@@ -136,6 +144,7 @@
 				22D5577723388D8200B215DC /* LaunchScreen.storyboard in Resources */,
 				22D5577423388D8200B215DC /* Assets.xcassets in Resources */,
 				22D5577223388D7F00B215DC /* Main.storyboard in Resources */,
+				22D557842338B8BF00B215DC /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D557832338B8BF00B215DC /* DetailViewController.m in Sources */,
 				22D5576F23388D7F00B215DC /* ViewController.m in Sources */,
 				22D5576923388D7F00B215DC /* AppDelegate.m in Sources */,
 				22D5577A23388D8200B215DC /* main.m in Sources */,
